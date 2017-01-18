@@ -2,23 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Polyfill</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
   </head>
   <body>
+    <div class="content">
+      <details open>
+        <summary>
+          Open Form
+        </summary>
+        <div class="content-details contentDetails">
+          <form>
+            <label for="name">Namn:</label>
+            <input id="name" type="text" />
 
-    <details id="details" open>
-      <summary>
-        Rubrik
-      </summary>
-      <div class="content">
-        <p>
-          Lite text som kommer gömmas
-        </p>
-      </div>
+            <label for="mail">Email:</label>
+            <input id="mail" type="email"/>
 
-
-    </details>
-
+            <label for="msg">Meddelande:</label>
+            <textarea id="msg"></textarea>
+            <button>Skicka</button>
+          </form>
+        </div>
+      </details>
+    </div>
+    <script src="jquery-3.1.1.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
